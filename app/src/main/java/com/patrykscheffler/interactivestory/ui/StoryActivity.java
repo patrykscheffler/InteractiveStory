@@ -1,13 +1,12 @@
-package com.patrykscheffler.interactivestory;
+package com.patrykscheffler.interactivestory.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.View;
+
+import com.patrykscheffler.interactivestory.R;
+import com.patrykscheffler.interactivestory.model.Page;
 
 public class StoryActivity extends AppCompatActivity {
 
@@ -22,6 +21,7 @@ public class StoryActivity extends AppCompatActivity {
         String name = intent.getStringExtra(getString(R.string.key_name));
         if (name == null) name = "Friend";
         Log.d(TAG, name);
+
     }
 
 }
